@@ -2,6 +2,12 @@
 
 Timer for focusing/studying/working/ect. This project was developed only in educational interest, not commercial.
 
+## :hammer_and_wrench: Stack
+
+1. Database: MS SQL already deployed to Azure, ORM - Prisma
+2. Frontend: React using Typescript
+3. API: GraphQL, Postman
+
 ## :pencil: Decomposition of tasks
 
 1. **Deployment**
