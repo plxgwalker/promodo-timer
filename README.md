@@ -2,7 +2,7 @@
 
 Timer for focusing/studying/working/ect. This project was developed only in educational interest, not commercial.
 
-# :pencil: Decomposition of tasks
+## :pencil: Decomposition of tasks
 
 1. **Deployment**
 
@@ -28,7 +28,7 @@ Timer for focusing/studying/working/ect. This project was developed only in educ
    - [ ] Home with your timer. Choose different timers, search for people, timers\settings
    - [ ] Profile with your timers, timer's settings
 
-# :iphone: Contact me
+## :iphone: Contact me
 
 :email: [Email](mailto:olegsuv.dev@gmail.com)
-:calling: [Telegram](https://t.me/suph0m)
+:calling: [Telegram](https://t.me/suph0mi3)
