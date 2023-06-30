@@ -1,4 +1,5 @@
 import { PrismaClient, User } from "@prisma/client";
+import { error } from "console";
 
 class UserService {
   private prisma: PrismaClient;
@@ -17,6 +18,13 @@ class UserService {
   async getUserById(id: string): Promise<User | null> {
     const user = await this.prisma.user.findUnique({
       where: { id },
+    });
+    return user;
+  }
+
+  async getUserByEmail(email: string): Promise<User | null> {
+    const user = await this.prisma.user.findUnique({
+      where: { email },
     });
     return user;
   }

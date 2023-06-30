@@ -6,7 +6,7 @@ Timer for focusing/studying/working/ect. This project was developed only in educ
 
 1. Database: MS SQL already deployed to Azure, ORM - Prisma
 2. Frontend: React using Typescript
-3. API: GraphQL, Postman
+3. API: REST, Swagger UI, Postman
 
 ## :pencil: Decomposition of tasks
 
@@ -18,7 +18,7 @@ Timer for focusing/studying/working/ect. This project was developed only in educ
 
 2. **API**
 
-   - [ ] Connect GraphQL
+   - [ ] Connect Swagger UI
    - [ ] Add all CRUD operations
    - [ ] Connect Postman
 
