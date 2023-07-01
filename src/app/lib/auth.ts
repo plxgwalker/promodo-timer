@@ -2,8 +2,8 @@ import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 
-import UserService from "../../../services/userService";
-import UserPasswordService from "../../../services/userPasswordService";
+import UserService from "../../services/userService";
+import UserPasswordService from "../../services/userPasswordService";
 
 import bcrypt from "bcrypt";
 
