@@ -1,0 +1,3 @@
+interface ICredentialsFormProps {
+  csrfToken?: string;
+}
