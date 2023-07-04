@@ -36,15 +36,13 @@ model Session {
 }
 
 model User {
-  id            String        @id @default(cuid())
+  id            String    @id @default(cuid())
   name          String?
-  email         String?       @unique
+  email         String?   @unique
   emailVerified DateTime?
   image         String?
   accounts      Account[]
   sessions      Session[]
-  timers        Timer[]
-  UserPassword  UserPassword?
 }
 
 model VerificationToken {
@@ -58,8 +56,6 @@ model VerificationToken {
 model Timer {
   id            Int            @id @default(autoincrement())
   createdAt     DateTime       @default(now())
-  userId        String
-  User          User           @relation(fields: [userId], references: [id])
   timerSettings TimerSettings?
   timerInfo     TimerInfo?
 }
@@ -89,6 +85,4 @@ model TimerInfo {
 model UserPassword {
   id             Int    @id @unique @default(autoincrement())
   hashedPassword String
-  userId         String @unique
-  user           User   @relation(fields: [userId], references: [id])
 }

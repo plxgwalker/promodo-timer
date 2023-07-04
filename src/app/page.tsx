@@ -1,5 +1,5 @@
 import CredentialsForm from "../components/CredentialsForm";
-import GithubSignInButton from "@/components/GitHubSignInBurron";
+import GithubSignInButton from "@/components/GitHubSignInButton";
 import GoogleSignInButton from "../components/GoogleSignInButton";
 
 export default async function SignIn() {

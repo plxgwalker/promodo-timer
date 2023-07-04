@@ -1,6 +1,8 @@
 import { NextAuthOptions } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import { PrismaClient } from "@prisma/client";
 
+import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
 
@@ -9,10 +11,16 @@ import UserPasswordService from "../../services/userPasswordService";
 
 import bcrypt from "bcrypt";
 
+const prisma = new PrismaClient();
+
 export const authConfig: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
+
+  adapter: PrismaAdapter(prisma),
+
+  debug: true,
 
   providers: [
     CredentialsProvider({
