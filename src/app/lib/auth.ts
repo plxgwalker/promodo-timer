@@ -14,10 +14,6 @@ import bcrypt from "bcrypt";
 const prisma = new PrismaClient();
 
 export const authConfig: NextAuthOptions = {
-  session: {
-    strategy: "jwt",
-  },
-
   adapter: PrismaAdapter(prisma),
 
   debug: true,
@@ -80,4 +76,18 @@ export const authConfig: NextAuthOptions = {
       clientSecret: process.env.GITHUB_SECRET as string,
     }),
   ],
+
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60,
+    updateAge: 24 * 60 * 60,
+  },
+
+  callbacks: {
+    async redirect({ url }) {
+      if (url.includes("/auth/signin")) return "/";
+      if (url.includes("/")) return "/auth/signin";
+      return url;
+    },
+  },
 };

@@ -3,7 +3,7 @@
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 
-export default function CredentialsForm(props: ICredentialsFormProps) {
+export default function credentialsForm(props: ICredentialsFormProps) {
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e) => {
@@ -20,7 +20,7 @@ export default function CredentialsForm(props: ICredentialsFormProps) {
       if (typeof window !== "undefined") {
         const { useRouter } = require("next/router");
         const router = useRouter();
-        router.push("/home");
+        router.push("/");
       }
     } else {
       console.log("Error: ", signInResponse);

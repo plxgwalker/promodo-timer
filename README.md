@@ -10,7 +10,7 @@ Timer for focusing/studying/working/ect. This project was developed only in educ
 
 ## :wrench: Configuration
 
-1. Create `~/.env` file and add databases JWT links, all auth ID's and secret's:
+1. Create `~/.env` file and add databases JDBC (SQL authentication) links, all auth services ID's and secret's:
 
 ```shell
 # Database Setup
