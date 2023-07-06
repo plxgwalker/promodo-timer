@@ -60,7 +60,8 @@ npm run dev
 4. **Pages**
    - [ ] About
    - [ ] Sign In, Sign Up page
-   - [x] Different OAuth variants: Google, Microsoft
+   - [x] Different OAuth variants: Google, GitHub
+   - [ ] Sign In with credentials
    - [ ] Home with your timer. Choose different timers, search for people, timers\settings
    - [ ] Profile with your timers, timer's settings
 
