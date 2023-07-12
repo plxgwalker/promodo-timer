@@ -1,7 +1,8 @@
 import WelcomeText from "@/components/auth/signIn/WelcomeText";
-import GoogleSignInButton from "../../../components/auth/signIn/GoogleSignInButton";
-import GithubSignInButton from "../../../components/auth/signIn/GitHubSignInButton";
-import CredentialsForm from "../../../components/auth/signIn/CredentialsForm";
+import GoogleSignInButton from "@/components/auth/signIn/GoogleSignInButton";
+import GithubSignInButton from "@/components/auth/signIn/GitHubSignInButton";
+import CredentialsForm from "@/components/auth/signIn/CredentialsForm";
+import LinkToSignUpPage from "@/components/auth/signIn/LinkToSignUpForm";
 
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
@@ -21,6 +22,7 @@ export default async function SignIn() {
             or
           </span>
           <CredentialsForm />
+          <LinkToSignUpPage />
         </div>
       </div>
     );
